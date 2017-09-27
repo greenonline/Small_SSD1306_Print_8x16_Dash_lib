@@ -16,6 +16,7 @@ void setup() {
 
 void loop() {
   printHelloWorld();
+  lcd.D_DRAW_VERT_DASHED(120,0,31);
   delay(2000);
   scrollHelloWorld();
   lcd.setPrint8x16CharacterMode(false);
@@ -29,7 +30,7 @@ void printHelloWorld(){
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("Hello");
-  lcd.setCursor(10,1);
+  lcd.setCursor(9,1);
   lcd.print("World");
 }
 
